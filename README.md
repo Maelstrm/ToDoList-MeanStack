@@ -2,7 +2,7 @@
 A ToDo list using Mongo, Express, Angular, and Node.
 ---
 
-##Basic Objectives
+## Basic Objectives
 1. [ ] Using AngularJS, create a front end experience that allows a user to create a task.
 2. [ ] When the task is created, it should be stored inside of a database (MongoDB)
 3. [ ] Whenever a task is created the front end should refresh to show all tasks that need to be completed.
@@ -12,12 +12,12 @@ A ToDo list using Mongo, Express, Angular, and Node.
 7. [ ] Deleting a task should remove it both from the Front End as well as the Database.
 8. [X] Include a README.md with your project (template).
 
-##Styling Objectives
+## Styling Objectives
 1. [ ] Background color for page
 2. [ ] Adjust font family & size
 3. [ ] text color and/or background color of tasks to show whether or not they have been completed
 
-##Stretch Goals
+## Stretch Goals
 1. [ ] Implement Bootstrap to take the visuals of the page up a notch.
 2. [ ] In whatever fashion you would like, create an 'are you sure: yes / no' option when deleting a task. Once again, you can interpret this however you would like.
 3. [ ] Move the inputs into a form and use ng-submit so that the user can hit enter to add a new task.
