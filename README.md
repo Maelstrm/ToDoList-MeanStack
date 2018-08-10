@@ -1,4 +1,4 @@
-# ToDoList-MeanStack
+# Simple To-Do List
 ### A ToDo list using Mongo, Express, Angular, and Node.
 ---
 
