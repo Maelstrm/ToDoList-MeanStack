@@ -10,7 +10,7 @@
 5. [ ] When a task is complete, its visual representation should change on the front end (for example, the background of the task container could change from gray to green, as well as the complete option 'checked off'. Each of these are accomplished in CSS, but will need to hook into logic to know whether or not the task is complete. ng-class will come in handy!)
 6. [ ] Whether or not a task is complete should also be stored in the database.
 7. [ ] Deleting a task should remove it both from the Front End as well as the Database.
-8. [X] Include a README.md with your project (template).
+8. [X] Include a README.md in project (template).
 
 ## Styling Objectives
 1. [ ] Background color for page
@@ -24,3 +24,15 @@
 4. [ ] Add front-end validation to the 'make-a-task' form.
 5. [ ] Add a category field for the task. Allow users to filter by task category.
 6. [ ] Adjust the logic so that completed tasks are brought to the bottom of the page, where the remaining tasks left to complete are brought to the top of the list.
+
+## Screenshot
+(N/A)
+
+## Next Steps
+(N/A)
+
+## Authors
+Jakeh Clark
+
+## Acknowledgments
+(N/A)
