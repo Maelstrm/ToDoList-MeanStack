@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000;
 
 // Require toDoListRouter into server
-const toDoListRouter = require('./router/toDoListRouter.js')
+const listRouter = require('./router/listRouter.js')
 
 // Require mongoose
 const mongoose = require('mongoose');
@@ -27,7 +27,7 @@ app.use(bodyParser.json()); // Required for Angular
 
 // Static files
 app.use(express.static('server/public'));
-app.use('toDoList', toDoListRouter);
+app.use('/toDoList', listRouter);
 
 // Listen to requests from specific port
 app.listen(PORT, () => {
