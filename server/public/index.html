@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +16,50 @@
     <script src="scripts/client.js"></script>
 </head>
 
-<body>
-<h1>To-Do List Application</h1>
+<body class="container">
+    <!-- Header -->
+    <header>
+        <h1>Imma Do It - App</h1>
+    </header>
+
+    <!-- Input for Database -->
+    <div id="inputArea">
+        <form>
+            <input type="text" placeholder="New Task..."></input>
+            <button type="button">Submit</button>
+        </form>
+    </div>
+
+    <!-- List Printed to Dom Here -->
+    <div>
+        <table>
+            <!-- Table Header -->
+            <thead>
+                <tr>
+                    <th>Delete</th>
+                    <th>Task Details</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+                <tr>
+                    <td>
+                        <button>Del</button>
+                    </td>
+                    <td>
+                        Task Details Task Details Task Details
+                    </td>
+                    <td>
+                        <input type="checkbox" value="true"/>
+                    </td>
+                </tr>
+        </table>
+    </div>
+
+
+
 </body>
 
 </html>
