@@ -16,51 +16,54 @@
     <script src="scripts/client.js"></script>
 </head>
 
-<body class="container">
-    <!-- Header -->
-    <header>
-        <h1>Imma Do It - App</h1>
-    </header>
+<!-- Setup app + controller -->
+<body ng-app="MyApp">
+    <div class="container" ng-controller="ListController as lc">
 
-    <!-- Input for Database -->
-    <div id="inputArea">
-        <form>
-            <input type="text" placeholder="New Task..."></input>
-            <button type="button">Submit</button>
-        </form>
+        <!-- Header -->
+        <header>
+            <h1>Imma Do It</h1>
+        </header>
+
+        <!-- Input for Database -->
+        <div id="inputArea">
+            <form class="form-group" ng-submit="lc.newTaskIn()">
+                <input ng-model="lc.taskInputIn" class="form-control" type="text" placeholder="Describe your task here."></input>
+                <button class="btn btn-primary btn-sm" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- List Printed to Dom Here -->
+        <div>
+            <table class="table table-striped">
+                <!-- Table Header -->
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Delete</th>
+                        <th>Task Details</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <!-- Table Body -->
+                <tbody>
+                    <tr ng-repeat="item in lc.toDoList">
+                        <td>
+                            <button ng-click="lc.deleteTask(item._id)">Del</button>
+                        </td>
+                        <td>
+                            <h6>{{item.dateStamp}}</h6>
+                            <h5>{{item.detail}}</h5>
+                        </td>
+                        <td>
+                            {{item.status}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
-
-    <!-- List Printed to Dom Here -->
-    <div>
-        <table>
-            <!-- Table Header -->
-            <thead>
-                <tr>
-                    <th>Delete</th>
-                    <th>Task Details</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-
-            <!-- Table Body -->
-            <tbody>
-                <tr>10/01/1989 6:11:15 PM</tr>
-                <tr>
-                    <td>
-                        <button>Del</button>
-                    </td>
-                    <td>
-                        Task Details Task Details Task Details
-                    </td>
-                    <td>
-                        <input type="checkbox" value="true"/>
-                    </td>
-                </tr>
-        </table>
-    </div>
-
-
-
 </body>
 
 </html>

@@ -26,8 +26,6 @@ router.get('/', (req, res) => {
 
     // Searches database for all items
     ToDoItems.find({}).then((foundItems) => {
-        console.log('found Items', foundItems);
-
         // Sends all items
         res.send(foundItems);
     }).catch((error) => {
@@ -57,5 +55,22 @@ router.post('/', (req, res) => {
         res.sendStatus(500);
     })
 }) //end Post
+
+//  Remove selected item from the list
+router.delete('/delete/:id', (req, res) => {
+    console.log('delete with id:', req.params.id);
+
+    ToDoItems.findByIdAndRemove(req.params.id).then((response) => {
+        console.log('object', req.params.id, 'removed from database');
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log('Error in Delete on server', error);
+        res.sendStatus(500);
+    })
+
+})
+
+// //  Modify status
+// router.put('status')
 
 module.exports = router;
