@@ -11,7 +11,7 @@ const listRouter = require('./router/listRouter.js')
 
 // Require mongoose
 const mongoose = require('mongoose');
-const mongoURI = 'mongomongodb://localhost:27017/todolist';
+const mongoURI = process.env.MONGODB_URI || 'mongomongodb://localhost:27017/todolist';
 
 // Attempt to connect to DB
 mongoose.connect(mongoURI, { useNewUrlParser: true});
