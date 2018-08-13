@@ -1,6 +1,13 @@
 # Imma Do It...
-### A mobile-first 'To-Do' app using Mongo, Express, Angular, and Node.
+### A mobile-first app
 ---
+## Technology
+1. MongoDB
+2. Express
+3. Angular.js
+4. Node.js
+4. Sweet Alerts
+5. Heroku
 
 ## Basic Objectives
 1. [x] Create a front end experience that allows a user to create a task.
