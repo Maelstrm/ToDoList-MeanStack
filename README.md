@@ -1,5 +1,5 @@
-# Simple To-Do List
-### A ToDo list using Mongo, Express, Angular, and Node.
+# Imma Do It...
+### A simple 'To-Do' app using Mongo, Express, Angular, and Node.
 ---
 
 ## Basic Objectives
