@@ -1,5 +1,6 @@
-# Imma Do It...
-### A mobile-first app
+# 'Imma Do It...
+##### A mobile-first app task managment.
+Play with the live version here: https://peaceful-ridge-80734.herokuapp.com/
 ---
 ## Technology
 1. MongoDB
