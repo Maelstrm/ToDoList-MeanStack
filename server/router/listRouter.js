@@ -25,7 +25,7 @@ const ToDoItems = mongoose.model('ToDoItems', ToDoSchema);
 router.get('/', (req, res) => {
 
     // Searches database for all items
-    ToDoItems.find({}).then((foundItems) => {
+    ToDoItems.find({}).sort([['status', 'descending']]).then((foundItems) => {
         // Sends all items
         res.send(foundItems);
     }).catch((error) => {
