@@ -53,7 +53,7 @@
                 <tbody>
                     <tr class="toDoItem" ng-repeat="item in lc.toDoList" ng-class="item.status ? 'bg-done text-secondary' : 'bg-unDone text-light'">
                         <td>
-                            <button class="btn btn-danger" ng-click="lc.deleteTask(item._id)"><i class="fas fa-trash"></i>
+                            <button class="btn btn-danger btn-sm" ng-click="lc.deleteTask(item._id)"><i class="fas fa-trash"></i>
                             </button>
                         </td>
                         <td>
@@ -61,7 +61,7 @@
                             <div id="itemDetails" ng-class="item.status ? 'itemDetailTrue' : 'itemDetailFalse'"> &nbsp; {{item.detail}} &nbsp;</div>
                         </td>
                         <td>
-                            <button class="btn bg-clear text-warning" ng-hide="item.status" ng-click="lc.changeStatus(item._id)"><i class="far fa-square"></i>
+                            <button class="btn bg-clear text-light" ng-hide="item.status" ng-click="lc.changeStatus(item._id)"><i class="far fa-square"></i>
                             </button>
 
                             <button class="btn bg-clear text-light" ng-show="item.status" ng-click="lc.changeStatus(item._id)"><i class="far fa-check-square"></i>
