@@ -23,13 +23,13 @@
 3. [x] Move the inputs into a form and use ng-submit so that the user can hit enter to add a new task.
 4. [x] Add front-end validation to the 'make-a-task' form.
 5. [ ] Add a category field for the task. Allow users to filter by task category.
-6. [ ] Adjust the logic so that completed tasks are brought to the bottom of the page, where the remaining tasks left to complete are brought to the top of the list.
+6. [X ] Adjust the logic so that completed tasks are brought to the bottom of the page, where the remaining tasks left to complete are brought to the top of the list.
 
 ## Screenshot
 ![Screenshot](screenshot.png)
 
 ## Next Steps
-Finish stretch Goals
+Need to add categories for tasks & filter feature for sorting tasks by category.
 
 ## Author
 Jakeh Clark
