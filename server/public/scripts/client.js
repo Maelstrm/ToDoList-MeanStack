@@ -33,6 +33,8 @@ myApp.controller('ListController', function ($http) {
             detail: vm.taskInputIn
         }
 
+        vm.taskInputIn = undefined;
+
         $http({
             method: 'post',
             url: '/todolist',
