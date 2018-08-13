@@ -24,14 +24,14 @@
 
         <!-- Header -->
         <header>
-            <h1>Imma Do It</h1>
+            <h1>Imma Do It...</h1>
             <hr>
         </header>
 
         <!-- Input for Database -->
         <div id="addTo">
             <form id="newItems" class="form-group form-inline" ng-submit="lc.newTaskIn()">
-                <input for="submit" id="inputArea" class="" ng-model="lc.taskInputIn"  type="text" placeholder="Whatchu trynna do??"></input>
+                <input for="submit" id="inputArea" class="" ng-model="lc.taskInputIn"  type="text" placeholder="Whatchu trynna do??" required></input>
                 <button id="submit" class="btn btn-primary btn-md" type="submit">
                     <i class="far fa-edit"></i>
                 </button>
@@ -62,10 +62,10 @@
                             <div id="itemDetails" ng-class="item.status ? 'itemDetailTrue' : 'itemDetailFalse'"> &nbsp; {{item.detail}} &nbsp;</div>
                         </td>
                         <td>
-                            <button class="btn bg-success" ng-hide="item.status" ng-click="lc.changeStatus(item._id)"><i class="far fa-square"></i>
+                            <button class="btn bg-warning" ng-hide="item.status" ng-click="lc.changeStatus(item._id)"><i class="far fa-square"></i>
                             </button>
 
-                            <button class="btn bg-light text-dark" ng-show="item.status" ng-click="lc.changeStatus(item._id)"><i class="far fa-check-square"></i>
+                            <button class="btn bg-done text-dark" ng-show="item.status" ng-click="lc.changeStatus(item._id)"><i class="far fa-check-square"></i>
                             </button>
                         </td>
                     </tr>
