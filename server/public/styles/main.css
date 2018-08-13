@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     padding: 0;
     margin: 0;
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(255, 255, 255);
 }
 
 button {
@@ -73,7 +73,7 @@ td {
 
 .container {
     width: 375px;
-    min-height: 667px;
+    
 }
 
 .itemDateStampTrue {
