@@ -28,10 +28,14 @@ myApp.controller('ListController', function ($http) {
     // update list on dom
     vm.newTaskIn = function () {
 
+        // Adds Date and Time Stamp
+    let dateCurrentStamp = String(new Date().toLocaleString());
+    
         // Package input to send to server
         let itemToSend = {
             detail: vm.taskInputIn
         }
+        itemToSend.dateStamp = dateCurrentStamp;
 
         vm.taskInputIn = undefined;
 

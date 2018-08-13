@@ -40,9 +40,6 @@ router.post('/', (req, res) => {
 
     // Assigns client data to a variable
     let fromClient = req.body;
-    // Adds Date and Time Stamp
-    let dateCurrentStamp = String(new Date().toLocaleString());
-    fromClient.dateStamp = dateCurrentStamp;
     // Applies Schema before sending
     let toDoToAdd = new ToDoItems(fromClient)
 
