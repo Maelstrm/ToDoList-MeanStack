@@ -1,0 +1,79 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+td {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.th {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.container {
+    width: 375px;
+}
+
+.itemDateStampTrue {
+    font-size: .75em;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.39);
+    padding: 0px, 2px, 0px, 2px;
+}
+
+.itemDateStampFalse {
+    font-size: .75em;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: rgba(255, 255, 255, 0.75);
+    padding: 0px, 2px, 0px, 2px;
+}
+
+.itemDetailTrue {
+    font-size: 1.55em;
+    color: rgba(255, 255, 255, 0.397);
+}
+
+.itemDetailFalse {
+    font-size: 1.55em;
+    color: white;
+}
+
+.bg-unDone {
+    background-color: #dc354669;
+}
+
+#submit {
+    width: 12%;
+}
+
+#newItems {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+
+#inputArea {
+    height: calc(2.25rem + 2px);
+    width: 87%;
+    margin-right: 3px;
+}
+
+#addTo {
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+}

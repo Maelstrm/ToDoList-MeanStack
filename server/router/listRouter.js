@@ -71,6 +71,24 @@ router.delete('/delete/:id', (req, res) => {
 })
 
 // //  Modify status
-// router.put('status')
+router.put('/changeStatus/:id', (req, res) => {
+    console.log('in changeStatus PUT', req.params.id);
+
+    // search database by id for the item
+    // modify the status
+    ToDoItems.findOne({_id: req.params.id}).then((foundItem) => {
+        console.log(foundItem);
+        foundItem.status = !foundItem.status;
+
+        foundItem.save().then((response) => {
+            res.sendStatus(200);
+        }).catch((error) => {
+            console.log(error);
+            res.sendStatus(500);
+            
+        })
+        
+    })
+})
 
 module.exports = router;

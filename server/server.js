@@ -4,6 +4,8 @@ const app = express();
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000;
 
+const sweetAlert = require('sweetalert');
+
 // Require toDoListRouter into server
 const listRouter = require('./router/listRouter.js')
 
